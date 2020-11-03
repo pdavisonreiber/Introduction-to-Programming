@@ -1,0 +1,851 @@
+<html>
+    <head>
+        <style>
+            @font-face {
+                font-family: octicons-link;
+                src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+            }
+        
+        .markdown-body {
+            -ms-text-size-adjust: 100;
+            -webkit-text-size-adjust: 100;
+            line-height: 1.5;
+            color: #24292e;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 16px;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+        
+        .markdown-body .pl-c {
+            color: #6a737d;
+        }
+        
+        .markdown-body .pl-c1,
+        .markdown-body .pl-s .pl-v {
+            color: #005cc5;
+        }
+        
+        .markdown-body .pl-e,
+        .markdown-body .pl-en {
+            color: #6f42c1;
+        }
+        
+        .markdown-body .pl-smi,
+        .markdown-body .pl-s .pl-s1 {
+            color: #24292e;
+        }
+        
+        .markdown-body .pl-ent {
+            color: #22863a;
+        }
+        
+        .markdown-body .pl-k {
+            color: #d73a49;
+        }
+        
+        .markdown-body .pl-s,
+        .markdown-body .pl-pds,
+        .markdown-body .pl-s .pl-pse .pl-s1,
+        .markdown-body .pl-sr,
+        .markdown-body .pl-sr .pl-cce,
+        .markdown-body .pl-sr .pl-sre,
+        .markdown-body .pl-sr .pl-sra {
+            color: #032f62;
+        }
+        
+        .markdown-body .pl-v,
+        .markdown-body .pl-smw {
+            color: #e36209;
+        }
+        
+        .markdown-body .pl-bu {
+            color: #b31d28;
+        }
+        
+        .markdown-body .pl-ii {
+            color: #fafbfc;
+            background-color: #b31d28;
+        }
+        
+        .markdown-body .pl-c2 {
+            color: #fafbfc;
+            background-color: #d73a49;
+        }
+        
+        .markdown-body .pl-c2::before {
+            content: "^M";
+        }
+        
+        .markdown-body .pl-sr .pl-cce {
+            font-weight: bold;
+            color: #22863a;
+        }
+        
+        .markdown-body .pl-ml {
+            color: #735c0f;
+        }
+        
+        .markdown-body .pl-mh,
+        .markdown-body .pl-mh .pl-en,
+        .markdown-body .pl-ms {
+            font-weight: bold;
+            color: #005cc5;
+        }
+        
+        .markdown-body .pl-mi {
+            font-style: italic;
+            color: #24292e;
+        }
+        
+        .markdown-body .pl-mb {
+            font-weight: bold;
+            color: #24292e;
+        }
+        
+        .markdown-body .pl-md {
+            color: #b31d28;
+            background-color: #ffeef0;
+        }
+        
+        .markdown-body .pl-mi1 {
+            color: #22863a;
+            background-color: #f0fff4;
+        }
+        
+        .markdown-body .pl-mc {
+            color: #e36209;
+            background-color: #ffebda;
+        }
+        
+        .markdown-body .pl-mi2 {
+            color: #f6f8fa;
+            background-color: #005cc5;
+        }
+        
+        .markdown-body .pl-mdr {
+            font-weight: bold;
+            color: #6f42c1;
+        }
+        
+        .markdown-body .pl-ba {
+            color: #586069;
+        }
+        
+        .markdown-body .pl-sg {
+            color: #959da5;
+        }
+        
+        .markdown-body .pl-corl {
+            text-decoration: underline;
+            color: #032f62;
+        }
+        
+        .markdown-body .octicon {
+            display: inline-block;
+            vertical-align: text-top;
+            fill: currentColor;
+        }
+        
+        .markdown-body a {
+            background-color: transparent;
+        }
+        
+        .markdown-body a:active,
+        .markdown-body a:hover {
+            outline-width: 0;
+        }
+        
+        .markdown-body strong {
+            font-weight: inherit;
+        }
+        
+        .markdown-body strong {
+            font-weight: bolder;
+        }
+        
+        .markdown-body h1 {
+            font-size: 2em;
+            margin: 0.67em 0;
+        }
+        
+        .markdown-body img {
+            border-style: none;
+        }
+        
+        .markdown-body code,
+        .markdown-body kbd,
+        .markdown-body pre {
+            font-family: monospace, monospace;
+            font-size: 1em;
+        }
+        
+        .markdown-body hr {
+            box-sizing: content-box;
+            height: 0;
+            overflow: visible;
+        }
+        
+        .markdown-body input {
+            font: inherit;
+            margin: 0;
+        }
+        
+        .markdown-body input {
+            overflow: visible;
+        }
+        
+        .markdown-body [type="checkbox"] {
+            box-sizing: border-box;
+            padding: 0;
+        }
+        
+        .markdown-body * {
+            box-sizing: border-box;
+        }
+        
+        .markdown-body input {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+        
+        .markdown-body a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        
+        .markdown-body a:hover {
+            text-decoration: underline;
+        }
+        
+        .markdown-body strong {
+            font-weight: 600;
+        }
+        
+        .markdown-body hr {
+            height: 0;
+            margin: 15px 0;
+            overflow: hidden;
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid #dfe2e5;
+        }
+        
+        .markdown-body hr::before {
+            display: table;
+            content: "";
+        }
+        
+        .markdown-body hr::after {
+            display: table;
+            clear: both;
+            content: "";
+        }
+        
+        .markdown-body table {
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+        
+        .markdown-body td,
+        .markdown-body th {
+            padding: 0;
+        }
+        
+        .markdown-body h1,
+        .markdown-body h2,
+        .markdown-body h3,
+        .markdown-body h4,
+        .markdown-body h5,
+        .markdown-body h6 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        .markdown-body h1 {
+            font-size: 32px;
+            font-weight: 600;
+        }
+        
+        .markdown-body h2 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        
+        .markdown-body h3 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .markdown-body h4 {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .markdown-body h5 {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .markdown-body h6 {
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .markdown-body p {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .markdown-body blockquote {
+            margin: 0;
+        }
+        
+        .markdown-body ul,
+        .markdown-body ol {
+            padding-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        .markdown-body ol ol,
+        .markdown-body ul ol {
+            list-style-type: lower-roman;
+        }
+        
+        .markdown-body ul ul ol,
+        .markdown-body ul ol ol,
+        .markdown-body ol ul ol,
+        .markdown-body ol ol ol {
+            list-style-type: lower-alpha;
+        }
+        
+        .markdown-body dd {
+            margin-left: 0;
+        }
+        
+        .markdown-body code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            font-size: 12px;
+        }
+        
+        .markdown-body pre {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            font-size: 12px;
+        }
+        
+        .markdown-body .octicon {
+            vertical-align: text-bottom;
+        }
+        
+        .markdown-body .pl-0 {
+            padding-left: 0 !important;
+        }
+        
+        .markdown-body .pl-1 {
+            padding-left: 4px !important;
+        }
+        
+        .markdown-body .pl-2 {
+            padding-left: 8px !important;
+        }
+        
+        .markdown-body .pl-3 {
+            padding-left: 16px !important;
+        }
+        
+        .markdown-body .pl-4 {
+            padding-left: 24px !important;
+        }
+        
+        .markdown-body .pl-5 {
+            padding-left: 32px !important;
+        }
+        
+        .markdown-body .pl-6 {
+            padding-left: 40px !important;
+        }
+        
+        .markdown-body::before {
+            display: table;
+            content: "";
+        }
+        
+        .markdown-body::after {
+            display: table;
+            clear: both;
+            content: "";
+        }
+        
+        .markdown-body>*:first-child {
+            margin-top: 0 !important;
+        }
+        
+        .markdown-body>*:last-child {
+            margin-bottom: 0 !important;
+        }
+        
+        .markdown-body a:not([href]) {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .markdown-body .anchor {
+            float: left;
+            padding-right: 4px;
+            margin-left: -20px;
+            line-height: 1;
+        }
+        
+        .markdown-body .anchor:focus {
+            outline: none;
+        }
+        
+        .markdown-body p,
+        .markdown-body blockquote,
+        .markdown-body ul,
+        .markdown-body ol,
+        .markdown-body dl,
+        .markdown-body table,
+        .markdown-body pre {
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+        
+        .markdown-body hr {
+            height: 0.25em;
+            padding: 0;
+            margin: 24px 0;
+            background-color: #e1e4e8;
+            border: 0;
+        }
+        
+        .markdown-body blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+        }
+        
+        .markdown-body blockquote>:first-child {
+            margin-top: 0;
+        }
+        
+        .markdown-body blockquote>:last-child {
+            margin-bottom: 0;
+        }
+        
+        .markdown-body kbd {
+            display: inline-block;
+            padding: 3px 5px;
+            font-size: 11px;
+            line-height: 10px;
+            color: #444d56;
+            vertical-align: middle;
+            background-color: #fafbfc;
+            border: solid 1px #c6cbd1;
+            border-bottom-color: #959da5;
+            border-radius: 3px;
+            box-shadow: inset 0 -1px 0 #959da5;
+        }
+        
+        .markdown-body h1,
+        .markdown-body h2,
+        .markdown-body h3,
+        .markdown-body h4,
+        .markdown-body h5,
+        .markdown-body h6 {
+            margin-top: 24px;
+            margin-bottom: 16px;
+            font-weight: 600;
+            line-height: 1.25;
+        }
+        
+        .markdown-body h1 .octicon-link,
+        .markdown-body h2 .octicon-link,
+        .markdown-body h3 .octicon-link,
+        .markdown-body h4 .octicon-link,
+        .markdown-body h5 .octicon-link,
+        .markdown-body h6 .octicon-link {
+            color: #1b1f23;
+            vertical-align: middle;
+            visibility: hidden;
+        }
+        
+        .markdown-body h1:hover .anchor,
+        .markdown-body h2:hover .anchor,
+        .markdown-body h3:hover .anchor,
+        .markdown-body h4:hover .anchor,
+        .markdown-body h5:hover .anchor,
+        .markdown-body h6:hover .anchor {
+            text-decoration: none;
+        }
+        
+        .markdown-body h1:hover .anchor .octicon-link,
+        .markdown-body h2:hover .anchor .octicon-link,
+        .markdown-body h3:hover .anchor .octicon-link,
+        .markdown-body h4:hover .anchor .octicon-link,
+        .markdown-body h5:hover .anchor .octicon-link,
+        .markdown-body h6:hover .anchor .octicon-link {
+            visibility: visible;
+        }
+        
+        .markdown-body h1 {
+            padding-bottom: 0.3em;
+            font-size: 2em;
+            border-bottom: 1px solid #eaecef;
+        }
+        
+        .markdown-body h2 {
+            padding-bottom: 0.3em;
+            font-size: 1.5em;
+            border-bottom: 1px solid #eaecef;
+        }
+        
+        .markdown-body h3 {
+            font-size: 1.25em;
+        }
+        
+        .markdown-body h4 {
+            font-size: 1em;
+        }
+        
+        .markdown-body h5 {
+            font-size: 0.875em;
+        }
+        
+        .markdown-body h6 {
+            font-size: 0.85em;
+            color: #6a737d;
+        }
+        
+        .markdown-body ul,
+        .markdown-body ol {
+            padding-left: 2em;
+        }
+        
+        .markdown-body ul ul,
+        .markdown-body ul ol,
+        .markdown-body ol ol,
+        .markdown-body ol ul {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        .markdown-body li {
+            word-wrap: break-all;
+        }
+        
+        .markdown-body li>p {
+            margin-top: 16px;
+        }
+        
+        .markdown-body li+li {
+            margin-top: 0.25em;
+        }
+        
+        .markdown-body dl {
+            padding: 0;
+        }
+        
+        .markdown-body dl dt {
+            padding: 0;
+            margin-top: 16px;
+            font-size: 1em;
+            font-style: italic;
+            font-weight: 600;
+        }
+        
+        .markdown-body dl dd {
+            padding: 0 16px;
+            margin-bottom: 16px;
+        }
+        
+        .markdown-body table {
+            display: block;
+            width: 100;
+            overflow: auto;
+        }
+        
+        .markdown-body table th {
+            font-weight: 600;
+        }
+        
+        .markdown-body table th,
+        .markdown-body table td {
+            padding: 6px 13px;
+            border: 1px solid #dfe2e5;
+        }
+        
+        .markdown-body table tr {
+            background-color: #fff;
+            border-top: 1px solid #c6cbd1;
+        }
+        
+        .markdown-body table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        
+        .markdown-body img {
+            max-width: 100;
+            box-sizing: content-box;
+            background-color: #fff;
+        }
+        
+        .markdown-body img[align=right] {
+            padding-left: 20px;
+        }
+        
+        .markdown-body img[align=left] {
+            padding-right: 20px;
+        }
+        
+        .markdown-body code {
+            padding: 0.2em 0.4em;
+            margin: 0;
+            background-color: rgba(27,31,35,0.05);
+            border-radius: 3px;
+        }
+        
+        .markdown-body pre {
+            word-wrap: normal;
+        }
+        
+        .markdown-body pre>code {
+            padding: 0;
+            margin: 0;
+            word-break: normal;
+            white-space: pre;
+            background: transparent;
+            border: 0;
+        }
+        
+        .markdown-body .highlight {
+            margin-bottom: 16px;
+        }
+        
+        .markdown-body .highlight pre {
+            margin-bottom: 0;
+            word-break: normal;
+        }
+        
+        .markdown-body .highlight pre,
+        .markdown-body pre {
+            padding: 16px;
+            overflow: auto;
+            font-size: 85;
+            line-height: 1.45;
+            background-color: #f6f8fa;
+            border-radius: 3px;
+        }
+        
+        .markdown-body pre code {
+            display: inline;
+            max-width: auto;
+            padding: 0;
+            margin: 0;
+            overflow: visible;
+            line-height: inherit;
+            word-wrap: normal;
+            background-color: transparent;
+            border: 0;
+        }
+        
+        .markdown-body .full-commit .btn-outline:not(:disabled):hover {
+            color: #005cc5;
+            border-color: #005cc5;
+        }
+        
+        .markdown-body kbd {
+            display: inline-block;
+            padding: 3px 5px;
+            font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            line-height: 10px;
+            color: #444d56;
+            vertical-align: middle;
+            background-color: #fafbfc;
+            border: solid 1px #d1d5da;
+            border-bottom-color: #c6cbd1;
+            border-radius: 3px;
+            box-shadow: inset 0 -1px 0 #c6cbd1;
+        }
+        
+        .markdown-body :checked+.radio-label {
+            position: relative;
+            z-index: 1;
+            border-color: #0366d6;
+        }
+        
+        .markdown-body .task-list-item {
+            list-style-type: none;
+        }
+        
+        .markdown-body .task-list-item+.task-list-item {
+            margin-top: 3px;
+        }
+        
+        .markdown-body .task-list-item input {
+            margin: 0 0.2em 0.25em -1.6em;
+            vertical-align: middle;
+        }
+        
+        .markdown-body hr {
+            border-bottom-color: #eee;
+        }
+        
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+        
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="markdown-body"><h1>Variables, Strings, and Numbers</h1>
+<p>In this section, you will learn to store information in variables. You will learn about two types of data: strings, which are sets of characters, and numerical data types.</p>
+<h1>Variables</h1>
+<p>A variable is a named object which stores a value. You can change the value of a variable at any point.</p>
+<p><em>Try running Example 1. Can you see how the value of the variable is changed each time?</em></p>
+<h1>Variable Naming Rules</h1>
+<ul>
+<li>Variables can only contain letters, numbers, and underscores. Variable names can start with a letter or an underscore, but can not start with a number.</li>
+<li>Spaces are not allowed in variable names, so we can use underscores instead of spaces. For example, use student  name instead of &quot;student name&quot;.</li>
+<li>Another convention is to use &quot;Camel Case&quot; so instead of student,  name we write <code>studentName</code>.</li>
+<li>You cannot use Python keywords as variable names.
+Variable names should be descriptive, so <code>studentName = &quot;Thomas&quot;</code> instead of <code>n = &quot;Thomas&quot;</code>.</li>
+<li>Be careful about using the lowercase letter l and the uppercase letter O in places where they could be confused with the numbers 1 and 0.</li>
+</ul>
+<p>Examples of good variable names:</p>
+<ul>
+<li>numberOfStudents</li>
+<li>answer_to_question_1</li>
+<li>postCode</li>
+</ul>
+<p>Examples of bad variable names:</p>
+<ul>
+<li>x</li>
+<li>l00p</li>
+<li>integer</li>
+</ul>
+<p><em>Now do Task 1.</em></p>
+<h1>Example 2</h1>
+<p>There is one common error when using variables, that you will almost certainly encounter at some point. Take a look at Example 2 and see if you can figure out why it causes an error.</p>
+<p>Let's look through this error message. First, we see it is a NameError. Then we see the file that caused the error, and a green arrow shows us what line in that file caused the error. Then we get some more specific feedback, that &quot;name 'mesage' is not defined&quot;.</p>
+<p>You may have already spotted the source of the error. We spelled message two different ways. Python does not care whether we use the variable name &quot;message&quot; or &quot;mesage&quot;. Python only cares that the spellings of our variable names match every time we use them.</p>
+<p>We can fix NameErrors by making sure all of our variable names are spelled consistently.</p>
+<p><em>Now do Task 2.</em></p>
+<h1>Strings</h1>
+<p>Strings are the way we store text in programming. They are composed of individual characters and are indicated using double or single quotation marks.</p>
+<pre><code>string1 = &quot;This is a double-quoted string.&quot;
+string2 = 'This is a single-quoted string.'
+</code></pre>
+<h1>Example 3 – Changing Case</h1>
+<p>You can easily change the case of a string, to present it the way you want it to look.</p>
+<p><em>Uncomment the lines in Example 3 to see how this works.</em></p>
+<p>You will see this syntax quite often, where a variable name is followed by a dot and then the name of an action, followed by a set of parentheses. The parentheses may be empty, or they may contain some values.</p>
+<pre><code>variable_name.action()
+</code></pre>
+<p>In this example, the word &quot;action&quot; is the name of a method. A method is something that can be done to a variable. The methods 'lower', 'title', and 'upper' are all functions that have been written into the Python language, which do something to strings. Later on, you will learn to write your own methods.</p>
+<h1>Example 4 – Concatenation</h1>
+<p>It is often very useful to be able to combine strings together into a longer string. This is called concatination, and is implemented using the + symbol.</p>
+<p><em>Uncomment the line in Example 4 to see how this works.</em></p>
+<p>If you don't know who Ada Lovelace is, you might want to go read what Wikipedia or the Computer History Museum have to say about her. She also happens to be the daughter of a famous Old Harrovian.</p>
+<p><em>Now do Task 5.</em></p>
+<h1>Example 5 – Whitespace</h1>
+<p>The term &quot;whitespace&quot; refers to characters that the computer is aware of, but are invisible to readers. The most common whitespace characters are spaces, tabs, and newlines.</p>
+<p>Spaces are easy to create, because you have been using them as long as you have been using computers. Tabs and newlines are represented by special character combinations.</p>
+<p>The two-character combination &quot;\t&quot; makes a tab appear in a string. Tabs can be used anywhere you like in a string.</p>
+<p><em>Try the first part of Example 5.</em></p>
+<p>We often ask the user to enter some text, and they might accidentally add some whitespace before or after. Whitespace includes spaces, tabs, and newlines.</p>
+<p>It is often a good idea to strip this whitespace from strings before you start working with them. For example, you might want to let people log in, and you probably want to treat &quot;eric &quot; as &quot;eric&quot; when you are trying to see the username eric exists on the system.</p>
+<p>You can strip whitespace from the left side, the right side, or both sides of a string.</p>
+<p><em>Try the second part of Example 5.</em></p>
+<h1>Numbers</h1>
+<p>Dealing with simple numerical data is fairly straightforward in Python, but there are a few things you should know about.</p>
+<h1>Example 6 – Integers</h1>
+<p>You can do all of the basic operations with integers, and everything should behave as you expect. Addition and subtraction use the standard plus and minus symbols. Multiplication uses the asterisk, and division uses a forward slash. Exponents use two asterisks.</p>
+<p><em>Try Example 6 Part 1.</em></p>
+<p>You can use parentheses to modify the standard order of operations.</p>
+<h1>Floating-Point Numbers</h1>
+<p>Floating-point numbers refer to any number with a decimal point. Most of the time, you can think of floating point numbers as decimals, and they will behave as you expect them to. However, sometimes you will get an answer with an unexpectly long decimal part.</p>
+<p><em>Try Example 7</em></p>
+<p>This happens because of the way computers represent numbers internally; this has nothing to do with Python itself. Basically, we are used to working in powers of ten, where one tenth plus two tenths is just three tenths. But computers work in powers of two. So your computer has to represent 0.1 in a power of two, and then 0.2 as a power of two, and express their sum as a power of two. There is no exact representation for 0.3 in powers of two, and we see that in the answer to 0.1+0.2.</p>
+<p>Python tries to hide this kind of stuff when possible. Don't worry about it much for now; just don't be surprised by it, and know that we will learn to clean up our results a little later on.</p>
+<p>You can also get the same kind of result with other operations, as you can see in the third part of Example 7.</p>
+<h1>Task 5 – Arithmetic</h1>
+<p>Write a program that prints out the results of at least one calculation for each of the basic operations: addition, subtraction, multiplication, division, and exponents.</p>
+<h1>Task 6 – Order of Operations</h1>
+<ul>
+<li>Find a calculation whose result depends on the order of operations.</li>
+<li>Print the result of this calculation using the standard order of operations.</li>
+<li>Use parentheses to force a nonstandard order of operations. Print the result of this calculation.</li>
+</ul>
+<h1>Task 7 - Long Decimals</h1>
+<p>On paper, 0.1+0.2=0.3. But you have seen that in Python, 0.1+0.2=0.30000000000000004.
+Find at least one other calculation that results in a long decimal like this.</p>
+<h1>Task 8 – Neat Arithmetic</h1>
+<ul>
+<li>Store the results of at least 5 different calculations in separate variables. Make sure you use each operation at least once.</li>
+<li>Print a series of informative statements, such as &quot;The result of the calculation 5+7 is 12.&quot; Below is an example of how to do this:</li>
+</ul>
+<pre><code>x = 3 + 2
+print(&quot;The result of 3 plus 2 is&quot;, x)
+</code></pre>
+<h1>Task 9 – Neat Order of Operations</h1>
+<p>Take your work for &quot;Order of Operations&quot; above.
+Instead of just printing the results, print an informative summary of the results. Show each calculation that is being done and the result of that calculation. Explain how you modified the result using parentheses.</p>
+<h1>The Zen of Python</h1>
+<p>The Python community is incredibly large and diverse. People are using Python in science, in medicine, in robotics, on the internet, and in any other field you can imagine. This diverse group of thinkers has developed a collective mindset about how programs should be written. If you want to understand Python and the community of Python programmers, it is a good idea to learn the ways Python programmers think.</p>
+<p>You can easily see a set of guiding principles that is written right into the language. Try running this line of code:</p>
+<pre><code>import this
+</code></pre>
+<p>There is a lot here. Let's just take a few lines, and see what they mean for you as a new programmer.</p>
+<blockquote>
+<p>Beautiful is better than ugly.</p>
+</blockquote>
+<p>Python programmers recognize that good code can actually be beautiful. If you come up with a particularly elegant or efficient way to solve a problem, especially a difficult problem, other Python programmers will respect your work and may even call it beautiful. There is beauty in high-level technical work.</p>
+<blockquote>
+<p>Explicit is better than implicit.</p>
+</blockquote>
+<p>It is better to be clear about what you are doing, than come up with some shorter way to do something that is difficult to understand.</p>
+<blockquote>
+<p>Simple is better than complex.
+Complex is better than complicated.</p>
+</blockquote>
+<p>Keep your code simple whenever possible, but recognize that we sometimes take on really difficult problems for which there are no easy solutions. In those cases, accept the complexity but avoid complication.</p>
+<blockquote>
+<p>Readability counts.</p>
+</blockquote>
+<p>There are very few interesting and useful programs these days that are written and maintained entirely by one person. Write your code in a way that others can read it as easily as possible, and in a way that you will be able to read and understand it 6 months from now. This includes writing good comments in your code.</p>
+<blockquote>
+<p>There should be one-- and preferably only one --obvious way to do it.</p>
+</blockquote>
+<p>There are many ways to solve most problems that come up in programming. However, most problems have a standard, well-established approach. Save complexity for when it is needed, and solve problems in the most straightforward way possible.</p>
+<blockquote>
+<p>Now is better than never.</p>
+</blockquote>
+<p>No one ever writes perfect code. If you have an idea you want to implement it, write some code that works. Release it, let it be used by others, and then steadily improve it.</p>
+<h1>Task 10 – Overall Challenges</h1>
+<p>We have learned quite a bit so far about programming, but we haven't learned enough yet for you to go create something. In the next section, things will get much more interesting, and there will be a longer list of overall challenges.</p>
+<p><strong>What I've Learned</strong>
+Write a program that uses everything you have learned in this notebook at least once.
+Write comments that label each section of your program.
+For each thing your program does, write at least one line of output that explains what your program did.
+For example, you might have one line that stores your name with some whitespace in a variable, and a second line that strips that whitespace from your name:</p>
+<pre><code># I learned how to strip whitespace from strings. 
+name = '\t\teric'
+print(&quot;I can strip tabs from my name: &quot; + name.strip())
+</code></pre>
+</div>
+    </body>
+</html>
